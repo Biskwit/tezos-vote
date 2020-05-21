@@ -6,6 +6,14 @@
 ligo compile-contract vote.ligo main > vote.tz
 ```
 
+```bash
+
+contract.ligo :
+
+ligo compile-storage vote.ligo main 'record[pause = True; oui = 0n; non = 0n; voters = (Set.empty : set(address))]'
+
+```
+
 ## Dry-run
 
 ```bash
